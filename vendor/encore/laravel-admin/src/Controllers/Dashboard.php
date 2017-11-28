@@ -111,4 +111,13 @@ class Dashboard
 
         return view('admin::dashboard.dependencies', compact('dependencies'));
     }
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public static function index()
+    {
+        return view('admin::dashboard.index');
+    }
+
 }

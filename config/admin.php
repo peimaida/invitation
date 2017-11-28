@@ -5,17 +5,17 @@ return [
     /*
      * Laravel-admin name.
      */
-    'name'      => 'Laravel-admin',
+    'name'      => '电子请柬管理平台',
 
     /*
      * Logo in admin panel header.
      */
-    'logo'      => '<b>Laravel</b> admin',
+    'logo'      => '<b>管理平台</b>',
 
     /*
      * Mini-logo in admin panel header.
      */
-    'logo-mini' => '<b>La</b>',
+    'logo-mini' => '<b>Menu</b>',
 
     /*
      * Route configration.
@@ -113,7 +113,7 @@ return [
      */
     'operation_log'   => [
 
-        'enable' => true,
+        'enable' => false,
 
         /*
          * Routes that will not log to database.
@@ -123,6 +123,7 @@ return [
          */
         'except' => [
             'admin/auth/logs*',
+            'admin/auth/logout',
         ],
     ],
 
@@ -145,7 +146,7 @@ return [
     /*
      * Version displayed in footer.
      */
-    'version'   => '1.5.x-dev',
+    'version'   => '0.1',
 
     /*
      * Settings for extensions.

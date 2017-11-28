@@ -15,23 +15,23 @@ class HomeController extends Controller
     {
         return Admin::content(function (Content $content) {
 
-            $content->header('Dashboard');
-            $content->description('Description...');
+            //$content->header('首页');
+            //$content->description('Description...');
 
             $content->row(Dashboard::title());
 
             $content->row(function (Row $row) {
 
-                $row->column(4, function (Column $column) {
-                    $column->append(Dashboard::environment());
-                });
+                // $row->column(7, function (Column $column) {
+                //     $column->append(Dashboard::environment());
+                // });
 
-                $row->column(4, function (Column $column) {
-                    $column->append(Dashboard::extensions());
-                });
+                // $row->column(7, function (Column $column) {
+                //     $column->append(Dashboard::extensions());
+                // });
 
-                $row->column(4, function (Column $column) {
-                    $column->append(Dashboard::dependencies());
+                $row->column(12, function (Column $column) {
+                    $column->append(Dashboard::index());
                 });
             });
         });
